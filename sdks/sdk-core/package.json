@@ -1,7 +1,8 @@
 {
-  "name": "@moonchain/swap-next-sdk",
+  "name": "@moonchain/swap-v3-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
+  "version": "0.0.1",
   "keywords": [
     "moonchain",
     "swap-next",
