@@ -1,9 +1,10 @@
 {
-  "name": "@uniswap/sdk-core",
+  "name": "@moonchain/swap-next-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
-    "uniswap",
+    "moonchain",
+    "swap-next",
     "ethereum"
   ],
   "license": "MIT",

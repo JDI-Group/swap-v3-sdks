@@ -62,6 +62,9 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MONAD_TESTNET]: '0x733e88f248b742db6c14c0b1713af5ad7fdd59d0',
   [ChainId.SONEIUM]: '0x97febbc2adbd5644ba22736e962564b23f5828ce',
   [ChainId.MONAD]: '0x182a927119d56008d921126764bf884221b10f59',
+
+  [ChainId.MOONCHAIN_HUDSON]: '0x6DE2b019Bd9E4e4be1B444ca1710614C93BcBc8e',
+  [ChainId.MOONCHAIN]: '',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -85,6 +88,9 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MONAD_TESTNET]: '0xfb8e1c3b833f9e67a71c859a132cf783b645e436',
   [ChainId.SONEIUM]: '0x273f68c234fa55b550b40e563c4a488e0d334320',
   [ChainId.MONAD]: '0x4b2ab38dbf28d31d467aa8993f6c2585981d6804',
+
+  [ChainId.MOONCHAIN_HUDSON]: '0x6DE2b019Bd9E4e4be1B444ca1710614C93BcBc8e',
+  [ChainId.MOONCHAIN]: '',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -434,6 +440,26 @@ const SONEIUM_ADDRESSES: ChainAddresses = {
   v4QuoterAddress: '0x3972c00f7ed4885e145823eb7c655375d275a1c5',
 }
 
+const MOONCHAIN_HUDSON_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x6DE2b019Bd9E4e4be1B444ca1710614C93BcBc8e',
+  multicallAddress: '0x1186894046B97893F788f0e33495999A49f8C58c',
+  quoterAddress: '0x80B28F551fD1aE5b9807158E66012E11117339dD',
+  v3MigratorAddress: '0xb5E2A4df37399e88C1264cee47e65dcAbfF2Dd3B',
+  nonfungiblePositionManagerAddress: '0x240819e8aD81Eb00a21A21e8a03A7ca0D3655041',
+  tickLensAddress: '0x2ce60a8cbd546557D561110BFc1a031996297c48',
+  swapRouter02Address: '0xC36cB23Cee0AC4B98414B352cF5a7f542878AC8A',
+}
+
+const MOONCHAIN_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  quoterAddress: '',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -464,6 +490,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
   [ChainId.MONAD]: MONAD_ADDRESSES,
+  [ChainId.MOONCHAIN_HUDSON]: MOONCHAIN_HUDSON_ADDRESSES,
+  [ChainId.MOONCHAIN]: MOONCHAIN_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
