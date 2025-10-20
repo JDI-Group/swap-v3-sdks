@@ -2534,9 +2534,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@moonchain/swap-next-sdk@workspace:sdks/sdk-core":
+"@moonchain/swap-v3-sdk@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
-  resolution: "@moonchain/swap-next-sdk@workspace:sdks/sdk-core"
+  resolution: "@moonchain/swap-v3-sdk@workspace:sdks/sdk-core"
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@ethersproject/bytes": ^5.7.0
