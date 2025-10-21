@@ -2,7 +2,7 @@
   "name": "@moonchain/swap-v3-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "moonchain",
     "swap-next",
@@ -11,7 +11,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "module": "dist/sdk-core.esm.js",
   "files": [
     "dist"
   ],
