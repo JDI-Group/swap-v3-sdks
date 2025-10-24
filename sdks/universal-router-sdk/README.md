@@ -12,7 +12,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@moonchain/swap-universal-router-sdk";
 
 // Each protocol data object contains 1 call to that protocol. Some protocols can fit
 // many NFT purchase within 1 call, like seaport. Others require multiple calls per NFT (like LooksRare).
@@ -27,7 +27,7 @@ const { calldata, value } = SwapRouter.swapCallParameters([looksRareTrades, seap
 ### Trading ERC20s on Uniswap
 warning: `swapERC20CallParameters()` to be deprecated in favor of `swapCallParameters()`
 ```typescript
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@moonchain/swap-sdk-core'
 import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
 import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
@@ -46,7 +46,7 @@ Send ETH to the router by trading an ERC20 for ETH with a Uniswap Trade and enco
 
 Use `trade_type: TradeType.EXACT_OUTPUT` to cover the entire NFT price, alternatively the transaction will send supplemental ETH to fulfill the entire price if the swap does not cover it in full. Keep in mind that `TradeType.EXACT_INPUT` trades are subject to slippage on output, and ETH will be sent to cover potential slippage and any remaining ETH will be returned to sender.
 ```typescript
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@moonchain/swap-sdk-core'
 import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
 import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
@@ -57,7 +57,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@moonchain/swap-universal-router-sdk";
 
 const looksRareTrades = new LooksRareTrade([looksrareData1, looksrareData2])
 const seaportTrades = new SeaportTrade([seaportData1])
@@ -81,7 +81,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@moonchain/swap-universal-router-sdk";
 
 const looksRareTrades = new LooksRareTrade([looksrareData1, looksrareData2])
 const seaportTrades = new SeaportTrade([seaportData1])

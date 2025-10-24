@@ -104,6 +104,18 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4300000000000000000000000000000000000004',
     creationBlock: 1116444,
   },
+  // moonchain hudson
+  [177888]: {
+    router: '0x0000000000000000000000000000000000000000', // Not deployed yet
+    weth: '0x1C5b8F35933d4C9BD0B49ca0b4F91475E1a6501b',
+    creationBlock: 0,
+  },
+  // moonchain
+  [999888]: {
+    router: '0x0000000000000000000000000000000000000000', // Not deployed yet
+    weth: '0x9423878649c42c6a7828fc66de3cf0046ecf7bbf',
+    creationBlock: 0,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {

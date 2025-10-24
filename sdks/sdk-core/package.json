@@ -1,7 +1,8 @@
 {
-  "name": "@uniswap/sdk-core",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "name": "@moonchain/swap-sdk-core",
+  "description": "⚒️ An SDK for building applications on top of Moonchain Swap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
+  "version": "4.1.2",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -9,7 +10,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "module": "dist/sdk-core.esm.js",
   "files": [
     "dist"
   ],

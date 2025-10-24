@@ -235,6 +235,28 @@ const BLAST_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66',
 }
 
+// Moonchain Hudson v3 addresses
+const MOONCHAIN_HUDSON_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x6DE2b019Bd9E4e4be1B444ca1710614C93BcBc8e',
+  multicallAddress: '0x1186894046B97893F788f0e33495999A49f8C58c',
+  quoterAddress: '0x80B28F551fD1aE5b9807158E66012E11117339dD',
+  v3MigratorAddress: '0xb5E2A4df37399e88C1264cee47e65dcAbfF2Dd3B',
+  nonfungiblePositionManagerAddress: '0x240819e8aD81Eb00a21A21e8a03A7ca0D3655041',
+  tickLensAddress: '0x2ce60a8cbd546557D561110BFc1a031996297c48',
+  swapRouter02Address: '0xC36cB23Cee0AC4B98414B352cF5a7f542878AC8A',
+}
+
+// Moonchain v3 addresses (contracts not deployed yet)
+const MOONCHAIN_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  quoterAddress: '',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -257,6 +279,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
+  [ChainId.MOONCHAIN_HUDSON]: MOONCHAIN_HUDSON_ADDRESSES,
+  [ChainId.MOONCHAIN]: MOONCHAIN_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

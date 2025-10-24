@@ -2,7 +2,7 @@ import { SignatureLike } from "@ethersproject/bytes";
 import {
   PermitBatchTransferFromData,
   PermitTransferFromData,
-} from "@uniswap/permit2-sdk";
+} from "@moonchain/swap-permit2-sdk";
 import { BigNumber } from "ethers";
 
 // General interface implemented by off chain orders
